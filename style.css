@@ -1,0 +1,72 @@
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-sérif;
+}
+h1{
+    font-family: 'Russo One', Arial;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+p{
+    font-weight: bold;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+article{
+    width: 400px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 5px;
+    box-shadow: 0 0 3px black;
+}
+
+.resultat{
+    text-align: center;
+}
+
+#submit{
+    margin-top: 15px;
+    padding: 15px;
+}
+#submit:hover{
+    background-color: lightblue;
+}
+
+.echec{
+    animation: echec 0.3s ease-in-out;
+}
+
+@keyframes echec {
+    0%{
+        transform: translateX(0px);
+    }
+    20%{
+        transform: translateX(10px);
+    }
+    40%{
+        transform: translateX(-10px);
+    }
+    60%{
+        transform: translateX(10px);
+    }
+    80%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}

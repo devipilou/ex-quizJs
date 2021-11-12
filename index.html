@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz JS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Quizz culture générale</h1>
+    <form class="form-quizz">
+        <article class="question-block">
+            <p>Qui est l'empereur de France le 2 décembre 1804 ?</p>
+            <input type="radio" name="q1" id="clovis" value="clovis" checked>
+            <label for="clovis">Clovis</label><br>
+            <input type="radio" name="q1" id="lincoln" value="lincoln">
+            <label for="lincoln">Abraham Lincoln</label><br>
+            <input type="radio" name="q1" id="napoleon" value="napoleon">
+            <label for="napoleon">Napoleon Bonaparte</label>
+        </article>
+
+        <article class="question-block">
+            <p>Quelle est la date de l'indépendance des Etats-Unis ?</p>
+            <input type="radio" name="q2" id="1776" value="1776" checked>
+            <label for="1776">4 juillet 1776</label><br>
+            <input type="radio" name="q2" id="1856" value="1856">
+            <label for="1856">18 avril 1856</label><br>
+            <input type="radio" name="q2" id="1925" value="1925">
+            <label for="1925">30 juillet 1925</label>
+        </article>
+        
+        <article class="question-block">
+            <p>La chute de l'empire romain se situe en ?</p>
+            <input type="radio" name="q3" id="15" value="15" checked>
+            <label for="15">15 ap. J-C</label><br>
+            <input type="radio" name="q3" id="395" value="395">
+            <label for="395">395 ap. J-C</label><br>
+            <input type="radio" name="q3" id="740" value="740">
+            <label for="740">740 av. J-C</label>
+        </article>
+
+        <article class="question-block">
+            <p>Quelle est la capitale de la Slovénie ?</p>
+            <input type="radio" name="q4" id="ljubjana" value="ljubjana" checked>
+            <label for="ljubjana">Ljubjana</label><br>
+            <input type="radio" name="q4" id="belgrade" value="belgrade">
+            <label for="belgrade">Belgrade</label><br>
+            <input type="radio" name="q4" id="bratislava" value="bratislava">
+            <label for="bratislava">Bratislava</label>
+        </article>
+
+        <article class="question-block">
+            <p>Combien d'habitants compte l'Irlande en 2020 ?</p>
+            <input type="radio" name="q5" id="1,365" value="1,365" checked>
+            <label for="1,365">1,365 Million</label><br>
+            <input type="radio" name="q5" id="21" value="21">
+            <label for="21">21 Millions</label><br>
+            <input type="radio" name="q5" id="4,9" value="4,9">
+            <label for="4,9">4,9 Millions</label>
+        </article>
+
+        <input type="submit" value="Validez vos choix" id="submit">
+
+    </form>
+    
+    <article class="resultat">
+        <h2>Cliquez sur valider pour voir les résultats</h2>
+        <p class="note"></p>
+        <p class="aide"></p>
+    </article>
+
+
+<!-- 
+    1. Créer l'interface, les blocs, les boutons radio
+    2. Styliser le tout
+    3. Récupérer les données au clic
+    4. Comparer les résultats
+    5. Afficher des phrases en fonction des résultats
+    6. Changer la couleur des blocs+animation en fonction des résultats
+ -->
+    <script src="app.js"></script>
+</body>
+</html>
